@@ -1,0 +1,1 @@
+Figures that seem ready for publication should be placed here
