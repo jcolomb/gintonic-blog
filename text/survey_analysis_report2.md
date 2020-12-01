@@ -142,7 +142,7 @@ meaning they can be synchronised, shared and published independently of the othe
 while looking completely normal on one's computer.
 A mockup presentation for a lab with 2 projects is available at https://gin.g-node.org/testorga.
 
-![Fig.4: Folder structure developed after analysing the survey.](../50_figures/foldertree_Screenshots/foldertree.png)
+![Fig.4: Folder structure developed after analysing the survey. The purple point and arrows indicates that these folders are mirrored in different folder structures (using the gi submodule technology). One can for instance access (and update) the same files looking in the project manuscript folder, or by navigating to the manuscripts folder, and then to the project. For each experiments, additional folders will be created automatically in different folders.](../50_figures/pulication_ready_figures/fig4.png)
 
 
 ## The project and cross-project level
