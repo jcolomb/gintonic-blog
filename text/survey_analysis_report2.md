@@ -18,9 +18,6 @@ Soon, researcher will be able to give a simple answer to the question above: *I 
 
 
 
-
-
-
 # Introduction
 
 Researchers spend time every day doing file management on their computers (creating, downloading, naming,  moving,  saving,  copying,  reviewing,  navigating, searching for, sharing, and deleting files and folders).
