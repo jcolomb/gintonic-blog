@@ -11,16 +11,16 @@ output:
 # Summary
 
 We are data managers of different institutions working with neurobiologists.
-Inside the gin-tonic project,
-we wants to provide researchers with a folder structure template that can be used to organise all digital documents related to a research project.
+Inside the gin-tonic project.
+We wants to provide researchers with a folder structure template that can be used to organise all digital documents related to a research project.
 This includes but is not restricted to the collected datasets.
 We collected the feedback of about 50 researchers presented with two templates propositions.
 **After presenting the analysis of the 51 survey responses,
-we are discussing the shortcoming of this approach and a technological solution to them.**
+we are discussing the shortcoming of this approach and a technological solution that would permit to circumvent them.**
 
 On one side,
 the tool should both separate data and analysis code to follow good practices,
-but allow for an experiment-based workflow.
+and allow for an experiment-based workflow.
 We propose to use a bot to create several folders at different location for each experiment.
 On the other side,
 researchers normally have more than one project and some documents,
