@@ -10,26 +10,13 @@ output:
 
 # Summary
 
-We are data managers of different institutions working with neurobiologists.
-Inside the gin-tonic project,
-we wants to provide researchers with a folder structure template that can be used to organise all digital documents related to a research project.
-This includes but is not restricted to the collected datasets.
-We collected the feedback of about 50 researchers presented with two templates propositions.
-**After presenting the analysis of the 51 survey responses,
-we are discussing the shortcoming of this approach and a technological solution to them.**
+*How do you organise your digital files for your research projects ?* In contrast to software developers, researchers get very few recommendations and examples to guide their choices. In addition, they do not have time to think about this before starting their experiments, and it is quasi impossible to clean things up a posteriori. We believed that providing researcher with a folder tree structure template could make a huge difference in the researchers data management.
 
-On one side,
-the tool should both separate data and analysis code to follow good practices,
-but allow for an experiment-based workflow.
-We propose to use a bot to create several folders at different location for each experiment.
-On the other side,
-researchers normally have more than one project and some documents,
-like for example conference presentations,
-are better organised outside of the project structure.
-We propose to use the git submodule technology to mirror these folders at different location.
-Documents will be available on the project structure (for easy sharing and re-use inside a project)
-and a different structure (allowing a better overview of specific work).
-We finally present an hypothetical use case demonstrating the new paradigm.
+We collected the feedback from 51 neuroscientists presented with 2 initial drafts,  analysed their responses, and build a second template draft based on this feedback. Researchers from all fields are now invited to review this draft in a second survey. This new template takes three levels of data organisation into account (experiment, project, laboratory), while staying relatively simple and flexible, especially when implemented it in a git workflow.    
+
+Soon, researcher will be able to give a simple answer to the question above: *I organise my file using the GIN research repository version 1.*
+
+
 
 
 
@@ -39,16 +26,15 @@ We finally present an hypothetical use case demonstrating the new paradigm.
 Researchers spend time every day doing file management on their computers (creating, downloading, naming,  moving,  saving,  copying,  reviewing,  navigating, searching for, sharing, and deleting files and folders).
 While many different initiatives and tools tried to improve file management (using tags, databases and search algorithms), the use of folder tree structure appeared to be unavoidable [@dinneenUbiquitousDigitalFile2020]. 
 While both reproducible research and data management advocates and experts are advising researchers to design a folder organisation structure ([@LibraryCarpentryLcfairresearch2019], [@theturingwaycommunityTuringWayHandbook2019]),
-few actually provide examples or attempts to homogenize the structure (but see [@vuorreSharingOrganizingResearch2020] and [@wilsonGoodEnoughPractices2017] for exceptions).
+only few actually provide examples or attempt to homogenize the structure (but see [@vuorreSharingOrganizingResearch2020] and [@wilsonGoodEnoughPractices2017] for exceptions).
 
+We are data managers of different institutions working with neurobiologists, and we teamed up with the NFDI-neuro community to develop a new strategy to help researchers with their data management. 
 We hypothesize that implementing a folder tree structure using a template could help researchers collaborate on their projects,
 and manage their data and files better.
 In a first step, 
-we designed two templates and a survey to guide our efforts to develop a template that
-would fit and hopefully be accepted by a large part of our community.
+we designed two templates (fig. 1) and a survey to guide our efforts.
 We are presenting here the analysis of the survey answer and a novel version of the template in accordance with the received feedback.
-This blog ends by outlining the gin-tonic application, that brings some technical solution to bring more flexibility in the template,
-expandind the project-bound template to deal with an experiment level and a meta-project level, using the git submodule technology. 
+This blog ends by outlining the gin-tonic application, that brings some technical solution (based on the git submodule technology) to add flexibility and ease of use in the template. 
 
 # The survey
 
@@ -169,5 +155,24 @@ so that organizing the dataset itself could follow conventions.
 We hope to provide the research community with a useful project folder structure template, which will get its full power when used inside the gin-tonic application.
 Tonic will indeed automate severyl administrative tasks, like the production of sub-folders upon new experiments,
 and come with a predefined rule for sharing one's files in the lab and beyond. 
+
+<!---
+
+On one side,
+the tool should both separate data and analysis code to follow good practices,
+and allow for an experiment-based workflow.
+We propose to use a bot to create several folders at different location for each experiment.
+On the other side,
+researchers normally have more than one project and some documents,
+like for example conference presentations,
+are better organised outside of the project structure.
+We propose to use the git submodule technology to mirror these folders at different location.
+Documents will be available on the project structure (for easy sharing and re-use inside a project)
+and a different structure (allowing a better overview of specific work).
+We finally present an hypothetical use case demonstrating the new paradigm.
+
+--->
+
+
 
 # References
