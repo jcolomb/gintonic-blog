@@ -111,29 +111,41 @@ Many researchers reported having a folder for all conferences reports or all man
 
 # The new template
 
-Data management principles recommend to keep all files related to a project in a single folder (it facilitates sharing of these files with the whole team working on the project), and to manage data and code differently (it allows different version control system, as well as sharing and reusing data and code independently), so we designed a template that follows these principles, but added some recommendations and technical solutions to allow users to have cross-project and experiment-level organisations of their files.
+Data management principles recommend to keep all files related to a project in a single folder (it facilitates sharing of these files with the whole team working on the project), 
+and to manage data and code differently (it allows different version control system, as well as sharing and reusing data and code independently). 
+We designed a template that follows these principles, 
+but added some recommendations and technical solutions 
+in order to permit users to have cross-project and experiment-level organisations of their files.
 
 ## The experiment level
 
 
-We propose to keep data and code in different first level folder, and to create several new folders (in the different first level folders), for each new experiment. This could be easily automatised in your computer language of choice, and we are working on bringing this functionality to gin-tonic (see below). In addition some of these new folders could also have their own templates. For instance different data folder following a specific template could be added depending on the kind of experiment is done.
+We propose to keep data and code in different first level folder, 
+and to create several new folders (in the different first level folders) for each new experiment. 
+This could be easily automated in your language of choice,
+and we are working on bringing this functionality to gin-tonic (see below). 
+In addition some of these new folders could also have their own templates. 
+For instance, you could use a specific BIDS template for some experiments, while others will use a different template.
+
 
 
 ## The project and cross-project level
 
-We propose to mirror some folders (for shared figures, report and conference, and manuscripts) both in the project folder and in a different folder (fig. 4). In addition, we would propose to add a `labcommons` folder that could be shared and synchronised between all lab members using cloud technologies. This will be quite difficult to set manually (using alias folders for example), but using git submodule technology in gin tonic, it can be automated (see below).
+We propose to mirror some folders (for shared figures, report and conference, and manuscripts) both in the project folder and in a different folder (fig. 4). 
+In addition, we would propose to add a `labcommons` folder that could be shared and synchronised between all lab members using cloud technologies. 
+This will be quite difficult to set manually (using alias folders for example), but using git submodule technology in gin tonic, it can be automated (see below).
 
 ![Fig.4: Folder structure developed after analysing the survey. The purple point and arrows indicates that these folders are mirrored in different folder structures (using the gi submodule technology). One can for instance access (and update) the same files looking in the project manuscript folder, or by navigating to the manuscripts folder, and then to the project. For each experiments, additional folders will be created automatically in different folders.](../50_figures/pulication_ready_figures/fig4.png)
 
 # Gin-tonic implementation
 
-GIN is the g-node infrastructure, which brings similar functionalities to gitlab or github, based on git and git annex technologies.
+GIN is the g-node infrastructure, which brings similar functionalities as gitlab or github, based on git and git annex technologies.
 We are building a `go` extension that will facilitate some administrative tasks and automate some complex workflow linked to the use of the template.
 We could not resist calling it tonic, in reference to the vigor added to the GIN tool.
 In gin-tonic, sub-folders can be submodules,
 meaning they can be synchronised, shared and published independently of the other sub-folders,
 while looking completely normal on one's computer.
-A mockup presentation for a lab with 2 projects is available at https://gin.g-node.org/testorga.
+A mock-up presentation for a lab with 2 projects is available at https://gin.g-node.org/testorga.
 
 The tonic application will create a new project repository,
 which will follow the research repository template with some folders being created as submodules (fig. 4). These submodules are also added to some lab-level repository.
