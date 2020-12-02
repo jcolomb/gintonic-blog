@@ -7,14 +7,16 @@ output:
 
 ---
 
+![titleimage: Some positive feedback received in the survey.](../50_figures/pulication_ready_figures/blogtitle.jpeg)
 
 # Summary
 
-*How do you organise your digital files for your research projects ?* In contrast to software developers, researchers get very few recommendations and examples to guide their choices. In addition, they do not have time to think about this before starting their experiments, and it is quasi impossible to clean things up a posteriori. We believed that providing researcher with a folder tree structure template could make a huge difference in the researchers data management.
+In contrast to software developers, researchers have few to no standard way to organise their files. Indeed, there are very few recommendations and examples for file organisation, nor is there time allocated to folder organisation design in the  researchers workflow. We believe that providing researcher with a folder tree structure template could make a huge difference in their researchers data management.
 
-We collected the feedback from 51 neuroscientists presented with 2 initial drafts,  analysed their responses, and build a second template draft based on this feedback. Researchers from all fields are now invited to review this draft in a second survey. This new template takes three levels of data organisation into account (experiment, project, laboratory), while staying relatively simple and flexible, especially when implemented it in a git workflow.    
 
-Soon, researcher will be able to give a simple answer to the question above: *I organise my file using the GIN research repository version 1.*
+We collected the feedback from 51 neuroscientists presented with 2 initial drafts,  analysed their responses, and build a second template draft based on this feedback. Researchers from all fields are now invited to review this draft in a second survey (run until mid January 2021, LINK). This new template takes three levels of data organisation into account (experiment, project, laboratory), while staying relatively simple and flexible, especially when implemented it in a git workflow.  
+
+
 
 
 
@@ -32,6 +34,10 @@ In a first step,
 we designed two templates (fig. 1) and a survey to guide our efforts.
 We are presenting here the analysis of the survey answer and a novel version of the template in accordance with the received feedback.
 This blog ends by outlining the gin-tonic application, that brings some technical solution (based on the git submodule technology) to add flexibility and ease of use in the template. 
+
+> *How do you organise your digital files for your research projects ?* 
+>
+> I organise my file using the GIN research repository (version 1).
 
 # The survey
 
