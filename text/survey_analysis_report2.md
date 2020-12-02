@@ -15,12 +15,20 @@ output:
 
 # Summary
 
-In contrast to software developers, researchers have few to no standard way to organise their files. Indeed, there are very few recommendations and examples for file organisation, nor is there time allocated to folder organisation design in the  researchers workflow. We believe that providing researcher with a folder tree structure template could make a huge difference in their researchers data management.
+In contrast to software developers, researchers have no standard way to organise their files.
+While data managers recommend to design such an organisation,
+they fail at providing clear recommendations or examples;
+and there is no time allocated to this task in the researcher work.
+We believe that providing researcher with a folder tree structure template could make a huge difference in promoting data management and research collaboration.
+Here we present the results of an initial survey run in three neuroscience research consortium (LINK).
 
 
-We collected the feedback from 51 neuroscientists presented with 2 initial drafts,  analysed their responses, and build a second template draft based on this feedback. Researchers from all fields are now invited to review this draft in a second survey (run until mid January 2021, LINK). This new template takes three levels of data organisation into account (experiment, project, laboratory), while staying relatively simple and flexible, especially when implemented it in a git workflow.  
-
-
+We collected the feedback from 51 neuroscientists presented with 2 initial drafts,
+analysed their responses,
+and build a second template draft based on this feedback that is presented here.
+This new template takes three levels of data organisation into account (experiment, project, laboratory),
+while staying relatively simple and flexible, especially when implemented it in a git workflow (using the GIN-tonic tool we are developing).
+Researchers from all research domains are now invited to review this draft in a second survey (run until mid January 2021, LINK).  
 
 
 
