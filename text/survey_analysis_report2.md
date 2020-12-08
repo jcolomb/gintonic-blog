@@ -132,7 +132,7 @@ For instance, you could use a specific BIDS template for some experiments, while
 ## The project and cross-project level
 
 We propose to mirror some folders (for shared figures, report and conference, and manuscripts) both in the project folder and in a different folder (see Fig. 4).
-In addition, we would propose to add a `labcommons` folder that could be shared and synchronised between all lab members using cloud technologies. 
+In addition, we propose to add a `labcommons` folder that could be shared and synchronised between all lab members using DropBox-like cloud technologies.
 This all will be quite difficult to set up manually (using alias folders for example), but using the git submodule technology in GIN-tonic, it can be automated (see below).
 
 ![Fig.4: Folder structure developed after analysing the survey. The purple point and arrows indicates that these folders are mirrored in different folder structures (using the gi submodule technology). One can for instance access (and update) the same files looking in the project manuscript folder, or by navigating to the manuscripts folder, and then to the project. For each experiments, additional folders will be created automatically in different folders.](../50_figures/pulication_ready_figures/fig4.png)
