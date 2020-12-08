@@ -16,7 +16,7 @@ output:
 # Summary
 
 In contrast to software developers, researchers mostly do not organize their files according to some common standard.
-While data managers recommend to design such an organisation,
+While data managers propose to design and follow such an organisation,
 they fail at providing clear recommendations or examples;
 and there is no time specifically assigned to this task in the researcher's work.
 We believe that providing researchers with a commonly accepted folder tree structure template could make a huge difference in promoting data management and research collaboration.
@@ -53,7 +53,7 @@ The blog ends by outlining the GIN-tonic application, that brings some technical
 
 # The survey
 
-## Two template structure
+## Two template structures
 
 In order to obtain a practical flair in comments and feedback received,
 we provided two templates, both having a similar number of folders,
@@ -81,7 +81,7 @@ In particular, computer scientists do not seem to differ from wet-lab researcher
 
 We asked three questions about where they would save or search for specific documents in the different structures.
 Researchers were indicating different folders between them, and different than the ones we designed for it,
-showing that **a too detailed folder structure would not be helpful**.
+showing that **a too detailed folder structure seems to be rather inconvenient*.
 On the other hand, researchers would navigate the repository to find specific files using similar strategies (Fig. 3),
 suggesting that having a structure can be helpful, and may reduce the time to browse for specific information.
 
@@ -89,7 +89,7 @@ suggesting that having a structure can be helpful, and may reduce the time to br
 
 ## Issues
 
-Most participants could see the advantage of such an homogenization of the project management for their own work, but were critical about the **cost/benefit ratio** of such a process, especially for ongoing projects.
+Most participants could see the advantage of having a standardized structure for their project files in their own work, but were critical about the **cost/benefit ratio** of such a process, especially for ongoing projects.
 Many mentioned that it would only reach full impact if the whole lab would be using it, emphasizing the advantage of such a system for
 collaborative work.
 In addition, they mentioned the time saved by not having to create a template for themselves,
@@ -111,8 +111,8 @@ Many researchers reported having a folder for all conferences reports or all man
 
 # The new template
 
-Data management principles recommend to keep all files related to a project in a single folder (this facilitates sharing of these files with the whole team working on the project),
-and to manage data and code differently (this allows different version control system, as well as sharing and reusing data and code independently).
+Data management principles recommend (1) to keep all files related to a project in a single folder (this facilitates sharing of these files with the whole team working on the project),
+and (2) to manage data and code differently (this allows different version control system, as well as independent sharing and reusing, of data and code).
 We designed a template that follows these principles, 
 but added some recommendations and technical solutions 
 in order to permit users to have cross-project and experiment-level organisations of their files.
@@ -125,7 +125,7 @@ and to create several new folders (in the different first level folders) for eac
 This could be easily automated in your language of choice,
 and we are working on bringing this functionality to GIN-tonic (see below).
 In addition, some of these new folders could also have their own templates.
-For instance, you could use a specific BIDS template for some experiments, while others will use a different template.
+For instance, you could use a specific BIDS standard template for some imaging experiments, while others will use a different template.
 
 
 
