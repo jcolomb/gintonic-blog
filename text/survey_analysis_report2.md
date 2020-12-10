@@ -3,11 +3,12 @@ title: "Towards a standardized research folder structure."
 bibliography:  "GIN-tonic-paper-zotero.bib"
 author:
   - Julien Colomb
+  - Thorsten Arendt
+  - Keisuke Sehara
   - The Gin-tonic team
 output: 
   bookdown::html_document2:
     keep_md: true
-
 ---
 
 
@@ -25,9 +26,9 @@ In this blog, we present the results of an initial survey run in three neuroscie
 
 We collected the feedback from 51 neuroscientists presented with two initial template drafts,
 analysed their responses,
-and built an updated template based on the feedback that is presented here.
+and built an updated template based on the feedback that is presented here (see https://doi.org/10.5281/zenodo.3987767 to download the templates).
 This new template takes three levels of data organisation into account (laboratory, project, and experiment),
-while staying fairly simple and flexible, especially when implemented it in a git workflow (using the GIN-tonic tool we are developing).
+while staying fairly simple and flexible, especially when implemented in a git workflow (using the GIN-tonic tool we are developing).
 Researchers from all research domains are now invited to review this draft in a second survey (run until mid January 2021, LINK).  
 
 
@@ -112,7 +113,9 @@ Data management principles recommend (1) to keep all files related to a project 
 and (2) to manage data and code differently (this allows different version control system, as well as independent sharing and reusing, of data and code).
 We designed a template that follows these principles, 
 but added some recommendations and technical solutions 
-in order to permit users to have laboratory and experiment-level organisations of their files.
+in order to permit users to have laboratory and experiment-level organisation of their files.
+
+![Fig.4: Folder structure developed after analyzing the survey. The template works mostly on the project level (one project for a folder, one folder per project). The experiment level is taken care by specific experiment-specific sub-folders one can add for each experiment. By sharing specific subfolder, one can reorganize specific information in cross-project repositories that host sub-folders coming from different projects. Note that both the creation of experiment sub-folders and the creation of laboratory level organisation can be automated in GIN-tonic.](../50_figures/pulication_ready_figures/fig4.png)
 
 ```{}
 Temptative definition of organisation levels:
@@ -141,7 +144,7 @@ We propose to share some sub-folders independently (for shared figures, report a
 In addition, we propose to add a `labcommons` folder that could be shared and synchronized between all lab members.
 
 
-![Fig.4: Folder structure developed after analysing the survey. The purple point and arrows indicates that these folders are mirrored in different folder structures (using the gi submodule technology). One can for instance access (and update) the same files looking in the project manuscript folder, or by navigating to the manuscripts folder, and then to the project. For each experiments, additional folders will be created automatically in different folders.](../50_figures/pulication_ready_figures/fig4.png)
+
 
 # Sharing and automation
 
