@@ -20,9 +20,9 @@ In contrast to software developers, researchers mostly do not organize their fil
 While data managers propose to design and follow such an organisation,
 they fail at providing clear recommendations or examples;
 and there is no time specifically assigned to this task in the researcher's work.
-We believe that providing researchers with a commonly accepted folder tree structure template could make a huge difference in promoting data management and facilitating research collaboration.
+We believe that **providing researchers with a commonly accepted folder tree structure template** could make a huge difference in promoting data management and facilitating research collaboration.
 In this blog, we present the results of an initial survey run in three neuroscientific research consortia ([CRC1315](https://www.biologie.hu-berlin.de/en/gruppenseiten-en/sfb1315), [CRC1158](www.sfb1158.de
-), [CRC135](http://www.allpsych.uni-giessen.de/sfb/)), including a presentation of a new folder structure and its technical implementation in the GIN-tonic application.
+), [CRC135](http://www.allpsych.uni-giessen.de/sfb/)), including a presentation of a new folder structure and its technical **implementation in the GIN-tonic application**.
 Researchers from all research domains are now invited to review this draft in a second survey (run until mid January 2021, LINK).  
 
 
