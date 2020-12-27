@@ -32,9 +32,9 @@ Researchers from all research domains and country of origins are now invited to 
 # Introduction
 
 Every day, researchers spend time doing file management on their computers (creating, downloading, naming, moving, saving, copying, reviewing, navigating, searching for, sharing, and deleting files and folders).
-While many different initiatives and tools have tried to improve file management (using tags, databases and search algorithms), the use of folder tree structure appeared to be unavoidable and necessary [@dinneenUbiquitousDigitalFile2020].
+While many different initiatives and tools have tried to improve file management (using tags, databases and search algorithms), the use of a folder tree structure appeared to be unavoidable and necessary [@dinneenUbiquitousDigitalFile2020].
 In addition, both proponents of reproducible research and data management experts recommend researchers the use of an appropriate folder organizational structure ([@LibraryCarpentryLcfairresearch2019], [@theturingwaycommunityTuringWayHandbook2019]).
-However, only few actually provide examples or did attempt to bring uniformity in such structures (see [@vuorreSharingOrganizingResearch2020] and [@wilsonGoodEnoughPractices2017] for exceptions).
+However, only few actually provide examples or attempt to bring uniformity in such structures (see [@vuorreSharingOrganizingResearch2020] and [@wilsonGoodEnoughPractices2017] for exceptions).
 
 We -the authors of this blog post- are data managers of different institutions working with neurobiologists, and we teamed up with the NFDI Neuroscience community to develop a new strategy to support researchers with their data management.
 We hypothesize that implementing a hierarchical directory structure using a template could help researchers collaborate on their projects,
@@ -58,11 +58,11 @@ This blog ends by outlining the GIN-Tonic application, that brings some technica
 
 In order to obtain a practical flair in comments and feedback received,
 we provided two templates, both having a similar number of folders,
-but organized differently.
-The 5_top template represented a more hierarchical structure,
-while the 9_top template represented a more flat structure (see Fig. 1).
+but organized differently. The templates were obtained by analyzing current research workflows discussed during a number of interviews with researchers of the involved consortia.
+The **_5_top_** template represented a more hierarchical structure,
+while the **_9_top_** template represented a more flat structure (see Fig. 1).
 Then, we asked researchers to browse the folder tree while asking them to place or find specific files,
-hoping researchers will make themselves familiar with the template before giving us thier feedback. 
+hoping researchers will make themselves familiar with the template before giving us their feedback. 
 
 ![Fig 1: the two templates structure](../50_figures/pulication_ready_figures/2draft-templates.png)
 
@@ -90,7 +90,7 @@ suggesting that having a structure can be helpful, and may reduce the time to br
 
 ## Issues
 
-Most participants could see the advantages of having a standardized structure for their files,
+Most participants see the advantages of having a standardized structure for their files,
 but were critical about the **cost to benefit ratio** of the process, especially for ongoing projects.
 Many mentioned that it would only reach full impact if the whole lab would be using it, emphasizing the advantage of such a system for
 collaborative work.
@@ -115,8 +115,8 @@ Many researchers reported having a folder for all conference reports or all manu
 ## Template overview
 
 Data management principles recommend (1) to keep all files related to a project in a single folder (this facilitates sharing of these files with the whole team working on the project, for instance),
-and (2) to manage data and code differently (this allows different version control system, as well as independent sharing and reusing of data and code).
-We designed a template that follows these principles, 
+and (2) to manage data and code differently (this allows different version control systems, as well as independent sharing and reusing of data and code).
+We finally designed a template that follows these principles, 
 but added some recommendations and technical solutions 
 in order to permit users to have laboratory and experiment-level organization of their files, nevertheless.
 
@@ -129,7 +129,7 @@ Our definition of the organisation levels:
 
 - Research project: The unit of research that address a specific research question. It can mostly be deliminated by the team involved and typically produce a unique research paper.
 
-- Laboratory: Any organization that involves files from several projects. It can also be for a unique researchers, or for a consortium of laboratories.
+- Laboratory: Any organization that involves files from several projects. It can also be for a unique researcher, or for a consortium of laboratories.
 
 ```
 
@@ -170,7 +170,7 @@ It is compatible with the git submodule technology, where sub-folders can be syn
 while looking completely normal on one's computer.
 GIN brings therefore the possibility to publish sub-modules independently of each others, 
 which will ease the opening of research data.
-It might also make [the use of markdown and latex to write manuscripts](https://oa-pub.hos.tuhh.de/en/project/) a straightforward choice, as these technologies can use git as a version control system.
+It might also make [the use of markdown and LaTex to write manuscripts](https://oa-pub.hos.tuhh.de/en/project/) a straightforward choice, as these technologies can use git as a version control system.
 
 
 We are building an extension that will facilitate some administrative tasks and automate some complex work-flows linked to the use of the template.
