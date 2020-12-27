@@ -1,11 +1,11 @@
 ---
-title: "Towards a standardized research folder structure."
-bibliography:  "GIN-tonic-paper-zotero.bib"
+title: "Towards a Standardized Research Folder Structure"
+bibliography:  "GIN-Tonic-paper-zotero.bib"
 author:
   - Julien Colomb
   - Thorsten Arendt
   - Keisuke Sehara
-  - The Gin-tonic team
+  - The Gin-Tonic team
 output: 
   bookdown::html_document2:
     keep_md: true
@@ -16,14 +16,15 @@ output:
 
 # Summary
 
-In contrast to software developers, researchers mostly do not organize their files according to some common standard.
+With the GIN-Tonic tool, we want to provide researchers with a default file organization and file sharing system for research projects, in order to facilitate research collaboration and lab management.
+In contrast to software developers, researchers mostly don't organize their files according to some common standard.
 While data managers propose to design and follow such an organisation,
-they fail at providing clear recommendations or examples;
+they fail at providing clear recommendations or examples to researchers;
 and there is no time specifically assigned to this task in the researcher's work.
 We believe that **providing researchers with a commonly accepted folder tree structure template** could make a huge difference in promoting data management and facilitating research collaboration.
-In this blog, we present the results of an initial survey run in three neuroscientific research consortia ([CRC1315](https://www.biologie.hu-berlin.de/en/gruppenseiten-en/sfb1315), [CRC1158](www.sfb1158.de
-), [CRC135](http://www.allpsych.uni-giessen.de/sfb/)), including a presentation of a new folder structure and its technical **implementation in the GIN-tonic application**.
-Researchers from all research domains are now invited to review this draft in a second survey (run until mid January 2021, LINK).  
+In this blog, we present the results of an initial survey run in three neuroscientific collaborative research centers in Germany ([CRC1315](https://www.biologie.hu-berlin.de/en/gruppenseiten-en/sfb1315), [CRC1158](www.sfb1158.de
+), [CRC135](http://www.allpsych.uni-giessen.de/sfb/)), including a presentation of a new folder structure and its technical **implementation in the GIN-Tonic application**.
+Researchers from all research domains and country of origins are now invited to review this draft in a second survey which runs until February 2021, LINK.  
 
 
 
@@ -46,9 +47,9 @@ In a first step,
 We collected the feedback from 51 neuroscientists presented with two initial template drafts (see Fig. 1),
 analyzed their responses,
 and built an updated template (see Fig. 4 and https://doi.org/10.5281/zenodo.3987767 to download the templates).
-This new template takes three levels of projects organization into account (laboratory, project, and experiment),
+This new template takes three levels of projects organization into account (experiment, project, and laboratory),
 while staying fairly simple and flexible.
-This blog ends by outlining the GIN-tonic application, that brings some technical solution (based on the git submodule technology) to add flexibility and ease of use to the template.
+This blog ends by outlining the GIN-Tonic application, that brings some technical solution (based on the git submodule technology) to add flexibility and ease of use to the template.
 
 
 # The survey
@@ -119,14 +120,14 @@ We designed a template that follows these principles,
 but added some recommendations and technical solutions 
 in order to permit users to have laboratory and experiment-level organization of their files, nevertheless.
 
-![Fig.4: Folder structure developed after analyzing the survey. The template works mostly on the project level (one unique folder for all files related to one project). The experiment level is taken care by specifying several experiment sub-folders when new experiments are started. By sharing specific subfolder independently in a cloud solution, one can reorganize information in cross-project directories that host sub-folders coming from different projects. Note that both the creation of experiment sub-folders and the creation of laboratory level organization is automated in GIN-tonic.](../50_figures/pulication_ready_figures/fig4.png)
+![Fig.4: Folder structure developed after analyzing the survey. The template works mostly on the project level (one unique folder for all files related to one project). The experiment level is taken care by specifying several experiment sub-folders when new experiments are started. By sharing specific subfolder independently in a cloud solution, one can reorganize information in cross-project directories that host sub-folders coming from different projects. Note that both the creation of experiment sub-folders and the creation of laboratory level organization is automated in GIN-Tonic.](../50_figures/pulication_ready_figures/fig4.png)
 
 ```{}
 Our definition of the organisation levels:
 
-- Research project: The unit of research that address a specific research question. It can mostly be deliminated by the team involved and typically produce a unique research paper.
+- Experiment: The unit of research involving a statistically dependent datasets that are analysed together. It mostly produces one figure. Different experiments typically involve different methods, or different samples, and could be ending in different publications. 
 
-- Experiment: The unit of research involving a statistically dependent datasets that are analysed together. I mostly produce one figure. Different experiments typically involve different methods, or different samples, and could be ending in different publications. 
+- Research project: The unit of research that address a specific research question. It can mostly be deliminated by the team involved and typically produce a unique research paper.
 
 - Laboratory: Any organization that involves files from several projects. It can also be for a unique researchers, or for a consortium of laboratories.
 
@@ -157,9 +158,9 @@ The creation of different sub-folders for one experiment could easily be automat
 
 Working on the laboratory level is more complex. If one wants to have cross-folder organization locally, one can work with "alias folders", where the user can create shortcuts to specific folders using a different organization. The data exists only once and there is no issues of synchronization. 
 
-The expected use case is different though, and we expect some users to have certain files organized by projects and other users having the same files organised by file type. This requires to share sub-folders independently and set the different instance of these sub-folders to be linked together. This is pretty complex to set up using common cloud technology (dropbox-like) that cannot be easily automated. As explained below, the open source GIN-tonic tool allows to set it up automatically, using the git submodule technology.
+The expected use case is different though, and we expect some users to have certain files organized by projects and other users having the same files organised by file type. This requires to share sub-folders independently and set the different instance of these sub-folders to be linked together. This is pretty complex to set up using common cloud technology (dropbox-like) that cannot be easily automated. As explained below, the open source GIN-Tonic tool allows to set it up automatically, using the git submodule technology.
 
-## GIN-tonic implementation
+## GIN-Tonic implementation
 
 GIN is the G-Node infrastructure.
 It is based on gogs, git and git annex technologies and
@@ -173,25 +174,25 @@ It might also make [the use of markdown and latex to write manuscripts](https://
 
 
 We are building an extension that will facilitate some administrative tasks and automate some complex work-flows linked to the use of the template.
-We could not resist calling it tonic, in reference to the vigor added to the GIN tool. The tonic tool is still in development, and we we are also working on the implementation of the tonic concept for GitLab-based platforms (that is, using git and git-LFS), called LAB-tonic. 
+We could not resist calling it Tonic, in reference to the vigor added to the GIN tool. The Tonic tool is still in development, and we we are also working on the implementation of the Tonic concept for GitLab-based platforms (that is, using git and git-LFS), called LAB-Tonic. 
 
   
 
-The tonic application creates a new project repository,
+The Tonic application creates a new project repository,
 cloning the research folder structure (with some folders being created as sub-modules), and adding a script that will synchronize the repository and its sub-modules on a double click. It also adds some submodules (shared-figures, manuscripts, and report_conf) to loboratory-wide repositories, automatically allowing laboratory level organisation of some files.
 This means that for example a manuscript draft can be available in the project folder on the student computer, while the same data will be available in the lab_manuscript folder on the PI computer, both version being synchronized with a unique version on the GIN server. 
 
 
 
 
-On the other hand, the tonic application will also be able to add submodules and folders to the parent repository. For each experiment performed, a data submodule  will be created, so that the data can be curated and published independently of the other experiments, while other normal folders will be created (see Fig. 4). A synchronisation of the computer version will then bring these changes on the local version, showing the new folders ready to be filled with data, code, and figures.
+On the other hand, the Tonic application will also be able to add submodules and folders to the parent repository. For each experiment performed, a data submodule  will be created, so that the data can be curated and published independently of the other experiments, while other normal folders will be created (see Fig. 4). A synchronisation of the computer version will then bring these changes on the local version, showing the new folders ready to be filled with data, code, and figures.
 
 
 # Conclusion
 
 We hope to provide the research community with a useful project folder structure template. 
 A second survey will tell us how wide it could be applied, and whether domain specific templates may be needed.
-The template will get its full power when used inside the gin-tonic application.
+The template will get its full power when used inside the gin-Tonic application.
 Tonic will indeed automate several administrative tasks, like the production of sub-folders upon new experiments,
 and come with a predefined rule for sharing one's files in the lab. 
 
