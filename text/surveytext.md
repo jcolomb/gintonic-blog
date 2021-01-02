@@ -2,7 +2,7 @@ Questions:
 
 Intro.
 
-We have developed a folder structure template for research project, and are eager to get the feedback of researchers of different disciplines, in order to optimize it. This version of the template was created with neuroscience projects in mind, and designed to be used in combination with a git-based data management platform, like GIN (g-node infrastructure). Its use would thrive an homogenization of file organization, which we think will ease data management and facilitate research collaboration. Please have a look at the template and respond to this few questions.
+We have developed a folder structure template for research projects, and are eager to get the feedback of researchers of different disciplines, in order to optimize it. This version of the template was created with neuroscience projects in mind, and designed to be used in combination with a git-based data management platform, like GIN (g-node infrastructure) or GitLab. Its use would thrive an homogenization of file organization, which we think will ease data management and facilitate research collaboration. Please have a look at the template and respond to this few questions.
 
 Please refer to BLOGPOST-LINK for more information.
 
@@ -10,13 +10,13 @@ Please refer to BLOGPOST-LINK for more information.
 
 
 
-1. What is your research field ?
+1. What is your research field?
    - Life sciences
    - Other STEM (science, technology, engineering and maths)
    - SSH (Social science, art and humanities)
 
 
-2. Would you consider using this template structure for your projects ?
+2. Would you consider using this template structure for your projects?
 
    - yes
    - yes but would modify some elements (please specify in the next question)
