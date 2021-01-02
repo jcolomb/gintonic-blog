@@ -68,7 +68,7 @@ hoping researchers will make themselves familiar with the template before giving
 
 ## No clear preference for one or the other template. 
 
-We ran the survey on the three involved CRCs during Autumn 2020 (using the lime survey application) and finally got 51 responses.
+We ran the survey on the three involved CRCs during autumn 2020 (using the lime survey application) and finally got 51 responses.
 In the meantime, we prepared the analysis code using fake data. The analysis was run on the final data to produce a reproducible report.
 In general, researchers reacted very positively to our project.
 Surprisingly, about half of the participants preferred one template, while the other half preferred the other one (see Fig. 2,
