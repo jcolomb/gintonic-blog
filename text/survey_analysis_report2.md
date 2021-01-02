@@ -179,7 +179,7 @@ We could not resist calling it Tonic, in reference to the vigor added to the GIN
   
 
 The Tonic application creates a new project repository,
-cloning the research folder structure (with some folders being created as sub-modules), and adding a script that will synchronize the repository and its sub-modules on a double click. It also adds some submodules (shared-figures, manuscripts, and report_conf) to loboratory-wide repositories, automatically allowing laboratory level organisation of some files.
+clones the research folder structure (with some folders being created as submodules), and adds a script that will synchronize the repository and its submodules on a double click. It also adds some submodules (shared_figures, manuscripts, and report_conf) to loboratory-wide repositories, automatically allowing laboratory level organisation of some files.
 This means that for example a manuscript draft can be available in the project folder on the student computer, while the same data will be available in the lab_manuscript folder on the PI computer, both version being synchronized with a unique version on the GIN server. 
 
 
