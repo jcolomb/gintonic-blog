@@ -110,7 +110,7 @@ On the other hand, some **files are organized outside of project folders**, that
 Many researchers reported having a folder for all conference reports or all manuscripts, for instance.
 
 
-# The new template
+# The revised template
 
 ## Template overview
 
