@@ -173,7 +173,7 @@ which will ease the opening of research data.
 It might also make [the use of markdown and LaTex to write manuscripts](https://oa-pub.hos.tuhh.de/en/project/) a straightforward choice, as these technologies can use git as a version control system.
 
 
-We are building an extension that will facilitate some administrative tasks and automate some complex work-flows linked to the use of the template.
+We are building an extension that will facilitate some administrative tasks and automate some complex workflows linked to the use of the template.
 We could not resist calling it Tonic, in reference to the vigor added to the GIN tool. The Tonic tool is still in development, and we we are also working on the implementation of the Tonic concept for GitLab-based platforms (that is, using git and git-LFS), called LAB-Tonic. 
 
   
