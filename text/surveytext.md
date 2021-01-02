@@ -36,11 +36,11 @@ no
 
 - COMMENT BOX
 
-4. Will you try to implement this template structure with your collaborators?
+4. If you use the template, would you like your collaborators to use it, too?
 
-I am the PI and I will force it as much as I can.
-I will show it to everyone and try to convince them.
-I will just use it for my projects.
+Yes, I will try to convince the lab PI to enforce its use.
+Yes, I will show it to everyone and try to convince them to use it.
+No, I will just use it for my projects.
 other
 
 
