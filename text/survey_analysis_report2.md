@@ -120,7 +120,7 @@ We finally designed a template that follows these principles,
 but added some recommendations and technical solutions 
 in order to permit users to have laboratory and experiment-level organization of their files, nevertheless.
 
-![Fig.4: Folder structure developed after analyzing the survey. The template works mostly on the project level (one unique folder for all files related to one project). The experiment level is taken care by specifying several experiment sub-folders when new experiments are started. By sharing specific subfolder independently in a cloud solution, one can reorganize information in cross-project directories that host sub-folders coming from different projects. Note that both the creation of experiment sub-folders and the creation of laboratory level organization is automated in GIN-Tonic.](../50_figures/pulication_ready_figures/fig4.png)
+![Fig.4: Folder structure developed after analyzing the survey. The template works mostly on the project level (one unique folder for all files related to one project). The experiment level is taken care by specifying several experiment subfolders when new experiments are started. By sharing specific subfolder independently in a cloud solution, one can reorganize information in cross-project directories that host subfolders coming from different projects. Note that both the creation of experiment subfolders and the creation of laboratory level organization is automated in GIN-Tonic.](../50_figures/pulication_ready_figures/fig4.png)
 
 ```{}
 Our definition of the organisation levels:
@@ -145,7 +145,7 @@ For instance, some researchers could use a specific BIDS standard template for s
 
 ## The project and laboratory level
 
-We propose to share some sub-folders independently (for shared figures, report and conferences, and manuscripts) in order to be able to have them in the project folder or in a different folder structure merging information coming from different projects. One could for instance create a folder containing all manuscripts prepared in the lab (see Fig. 4).
+We propose to share some subfolders independently (for shared figures, report and conferences, and manuscripts) in order to be able to have them in the project folder or in a different folder structure merging information coming from different projects. One could for instance create a folder containing all manuscripts prepared in the lab (see Fig. 4).
 
 
 
@@ -154,11 +154,11 @@ We propose to share some sub-folders independently (for shared figures, report a
 
 ## Automation possibilities
 
-The creation of different sub-folders for one experiment could easily be automated in your computer language of choice. An automation would make sure that the folder names are kept consistent for each experiment.
+The creation of different subfolders for one experiment could easily be automated in your computer language of choice. An automation would make sure that the folder names are kept consistent for each experiment.
 
 Working on the laboratory level is more complex. If one wants to have cross-folder organization locally, one can work with "alias folders", where the user can create shortcuts to specific folders using a different organization. The data exists only once and there is no issues of synchronization. 
 
-The expected use case is different though, and we expect some users to have certain files organized by projects and other users having the same files organised by file type. This requires to share sub-folders independently and set the different instance of these sub-folders to be linked together. This is pretty complex to set up using common cloud technology (dropbox-like) that cannot be easily automated. As explained below, the open source GIN-Tonic tool allows to set it up automatically, using the git submodule technology.
+The expected use case is different though, and we expect some users to have certain files organized by projects and other users having the same files organised by file type. This requires to share subfolders independently and set the different instance of these subfolders to be linked together. This is pretty complex to set up using common cloud technology (dropbox-like) that cannot be easily automated. As explained below, the open source GIN-Tonic tool allows to set it up automatically, using the git submodule technology.
 
 ## GIN-Tonic implementation
 
@@ -166,9 +166,9 @@ GIN is the G-Node infrastructure.
 It is based on gogs, git and git annex technologies and
  brings non only most of the project management and coordination tools that made the success of open source software development,
 but also large file support and data publication.
-It is compatible with the git submodule technology, where sub-folders can be synchronized, shared and published independently of the other sub-folders,
+It is compatible with the git submodule technology, where subfolders can be synchronized, shared and published independently of the other subfolders,
 while looking completely normal on one's computer.
-GIN brings therefore the possibility to publish sub-modules independently of each others, 
+GIN brings therefore the possibility to publish submodules independently of each others, 
 which will ease the opening of research data.
 It might also make [the use of markdown and LaTex to write manuscripts](https://oa-pub.hos.tuhh.de/en/project/) a straightforward choice, as these technologies can use git as a version control system.
 
@@ -193,7 +193,7 @@ On the other hand, the Tonic application will also be able to add submodules and
 We hope to provide the research community with a useful project folder structure template. 
 A second survey will tell us how wide it could be applied, and whether domain specific templates may be needed.
 The template will get its full power when used inside the gin-Tonic application.
-Tonic will indeed automate several administrative tasks, like the production of sub-folders upon new experiments,
+Tonic will indeed automate several administrative tasks, like the production of subfolders upon new experiments,
 and come with a predefined rule for sharing one's files in the lab. 
 
 
